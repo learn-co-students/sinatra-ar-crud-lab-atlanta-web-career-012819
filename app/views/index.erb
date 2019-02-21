@@ -7,7 +7,7 @@
   <body>
     <h2>Articles</h2>
     <ol>
-    <% Article.all.limit(10).each do |art| %>
+    <% @articles.each do |art| %>
       <li><%= art.title %></li>
     <% end %>
     </ol>
