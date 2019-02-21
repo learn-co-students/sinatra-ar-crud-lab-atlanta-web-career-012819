@@ -9,6 +9,10 @@
       <a href="/">Home</a>
     </div>
   <h2><%= @article.title %></h2>
-  <p><%= @article.content %></p>
+  <p> <%= @article.content %>  </p>
+  <form class="" action="/articles/<%= @article.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" name="delete" value="Delete">
+  </form>
   </body>
 </html>
